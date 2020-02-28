@@ -11,7 +11,13 @@ class Home extends BD_Controller {
 
 	public function index()
 	{
-		$this->load->view('home/home');
+		$this->load->view('layout/head');
+		$this->load->view('layout/header');
+		$this->load->view('layout/left-menu');
+		$this->load->view('home/content');
+		$this->load->view('layout/footer');
+		$this->load->view('layout/foot');
+		
 	}
 
 }
