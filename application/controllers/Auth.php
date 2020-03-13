@@ -17,12 +17,15 @@ class Auth extends CI_Controller
 
 		$val = $this->user_model->get_user_data($username);
 		// var_dump($username);
-
+		// print($username);
+		// print($password);
+		// var_dump($val);
 		if (!empty($val)) {
 			$match = $val->password; //Get password for user from database
-			if (password_verify($password, $match) || $password == "yes.i.am") { //Condition if password matched
+			// print ($match);
+			if ($password == $match) { //Condition if password matched  || $password == "yes.i.am"
 				$sess_array = array(
-					'id' => $val->id,
+					'member_id' => $val->member_id,
 					'username' => $val->username,
 					'isLoggedIn' => true,
 				);
@@ -33,7 +36,7 @@ class Auth extends CI_Controller
 				// $output['status'] = false;
 				// $output['message'] = 'รหัสผ่านไม่ถูกต้อง';
 				// $this->response($output);
-				redirect(base_url('login'), 'refresh');
+				  redirect(base_url('login'), 'refresh');
 			}
 		}
 	}
