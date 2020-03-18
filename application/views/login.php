@@ -52,7 +52,7 @@
         <div class="col-xs-8">
           <div class="checkbox icheck">
             <label>
-              <input type="checkbox"> Remember Me
+            <text>Have a account yet? </text><a href="">Sign Up</a>
             </label>
           </div>
         </div>
@@ -60,8 +60,12 @@
         <div class="col-xs-4">
           <button type="submit" class="btn btn-primary btn-block btn-flat" >Sign In</button>
         </div>
+        <div class="col-xs-8">
+        
+      </div>
         <!-- /.col -->
       </div>
+      
     </form>
   </div>
   <!-- /.login-box-body -->
