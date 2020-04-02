@@ -6,7 +6,6 @@ class ReportScores extends BD_Controller {
 	public function people()
 	{
 		$this->load->view('layout/head');
-		$this->load->view('layout/head');
 		$this->load->view('layout/header');
 		$this->load->view('layout/left-menu');
 		$this->load->view('report_score/people');
@@ -17,7 +16,6 @@ class ReportScores extends BD_Controller {
 
 	public function youth()
 	{
-		$this->load->view('layout/head');
 		$this->load->view('layout/head');
 		$this->load->view('layout/header');
 		$this->load->view('layout/left-menu');
