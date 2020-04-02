@@ -1,0 +1,28 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Showname extends CI_Controller {
+
+	public function index()
+	{
+		$this->load->view('layout/head');
+		$this->load->view('layout/header');
+		$this->load->view('layout/left-menu');
+		$this->load->view('Showname/show_name');
+		//$this->load->view('layout/footer');
+		$this->load->view('layout/foot');
+		
+    }
+    public function show_name2()
+	{
+		$this->load->view('layout/head');
+		$this->load->view('layout/header');
+		$this->load->view('layout/left-menu');
+		$this->load->view('Showname/show_name');
+		//$this->load->view('layout/footer');
+		$this->load->view('layout/foot');
+		
+	}
+
+
+}
