@@ -33,11 +33,12 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="<?php echo base_url(); ?>public/index2.html"><b>Admin</b>LTE</a>
+    <a href="<?php echo base_url(); ?>public/index2.html"><b>Badminton</b>| Log in</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Sign in to start your session</p>
+    <!-- <p class="login-box-msg">Sign in to start your session</p> -->
+    <br>
 
     <form action="<?php echo base_url(); ?>Auth/Login" method="post" id="frm-login">
       <div class="form-group has-feedback">
@@ -52,7 +53,7 @@
         <div class="col-xs-8">
           <div class="checkbox icheck">
             <label>
-            <text>Have a account yet? </text><a href="">Sign Up</a>
+            <text>Have a account yet? </text><a href="<?php echo base_url('RegisterMember/index') ?>">Sign Up</a>
             </label>
           </div>
         </div>

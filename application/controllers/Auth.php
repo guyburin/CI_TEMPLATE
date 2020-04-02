@@ -46,4 +46,31 @@ class Auth extends CI_Controller
 		$this->session->sess_destroy();
         redirect(base_url('login'));
 	}
+
+	public function registerMember()
+	{
+		$Username = $this->input->post('Username');
+		$Password = $this->input->post('Password');
+		$C_Password = $this->input->post('C_Password');
+		$Name = $this->input->post('Name');
+		$Sername = $this->input->post('Sername');
+		$age = $this->input->post('sex');
+		$date = $this->input->post('date');
+		$Club = $this->input->post('Club');
+		$Phone = $this->input->post('Phone');
+		$Line = $this->input->post('Line');
+		// print($Username);
+		// print($Password);
+		// print($C_Password);
+		// print($Name);
+		// print($Sername);
+		// print($age);
+		// print($date);
+		// print($Club);
+		// print($Phone);
+		// print($Line);
+		// $db = new User_model();
+		// $result = $db->insert();
+		// response(200, $result);
+	}
 }

@@ -13,4 +13,14 @@ class User_model  extends CI_Model {
         return $query->row(); // ตัวเดียว
         // return $query->result(); //หลายตัว
     }
+    public function post_user_data($username)
+    {
+        $this->db->insert();
+        $this->db->from('member');
+        $this->db->where('username', $username);
+        $query = $this->db->get();
+
+        return $query->row(); // ตัวเดียว
+        // return $query->result(); //หลายตัว
+    }
 }
