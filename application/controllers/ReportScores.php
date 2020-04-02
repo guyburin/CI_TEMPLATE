@@ -25,5 +25,4 @@ class ReportScores extends BD_Controller {
 
 	}
 	
-
 }
