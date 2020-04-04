@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class InsertScore extends BD_Controller {
 
-	public function Insert_score()
+	public function index()
 	{
 		$this->load->view('layout/head');
 		$this->load->view('layout/header');
