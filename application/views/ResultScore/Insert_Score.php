@@ -41,7 +41,7 @@
 			}
 		</script>
 		
-		<label > &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;</label>
+		<label > &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;</label>
 		<select class="btn btn-warning dropdown-toggle" id="generation" onchange="myFunction()">
 			<option>ประเภทการแข่งขัน</option>
 			<option value="national">ประชาชน</option>
