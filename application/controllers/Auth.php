@@ -7,7 +7,7 @@ class Auth extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('user_model');
+		$this->load->model('User_model');
 	}
 
 	public function login()
@@ -15,7 +15,7 @@ class Auth extends CI_Controller
 		$username = $this->input->post('txt_username');
 		$password = $this->input->post('txt_password');
 
-		$val = $this->user_model->get_user_data($username);
+		$val = $this->User_model->get_user_data($username);
 		// var_dump($username);
 		// print($username);
 		// print($password);
@@ -59,26 +59,31 @@ class Auth extends CI_Controller
 	{
 		$Username = $this->input->post('Username');
 		$Password = $this->input->post('Password');
-		$C_Password = $this->input->post('C_Password');
+		// $p = password_hash($Password, PASSWORD_BCRYPT);
 		$Name = $this->input->post('Name');
 		$Sername = $this->input->post('Sername');
-		$age = $this->input->post('sex');
+		$Nickname = $this->input->post('Nickname');
+		// $age = $this->input->post('sex');
 		$date = $this->input->post('date');
 		$Club = $this->input->post('Club');
 		$Phone = $this->input->post('Phone');
 		$Line = $this->input->post('Line');
-		// print($Username);
-		// print($Password);
-		// print($C_Password);
-		// print($Name);
-		// print($Sername);
-		// print($age);
-		// print($date);
-		// print($Club);
-		// print($Phone);
-		// print($Line);
-		// $db = new User_model();
-		// $result = $db->insert();
-		// response(200, $result);
+		// print($Nickname);
+		$document = [
+            "username" => $Username,
+            "password" => $Password,
+            "name" => $Name,
+            "sername" => $Sername,
+            "nick_name" => $Nickname,
+            "club" => $Club,
+            "line_id" => $Line,
+            "phone" => $Phone,
+            "birthday" => $date,
+            "role" => 1
+		];
+		// var_dump($document);
+		$result = $this->User_model->insert_user($document);
+		// $db = $this->db;
+		// $result = $db->insert($Username,$Password,$Name ,$Sername,$Nickname,$date, $Club,$Phone ,$Line);
 	}
 }
