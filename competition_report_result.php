@@ -199,7 +199,17 @@
 			}
 
 		</script>
+    <div class="row">
+      <div class="col-md-4">
 
+      </div>
+      <div class="col-md-4">
+
+      </div>
+      <div class="col-md-4">
+
+      </div>
+    </div>
     <div class="form-group">
       <label for="list">ประเภทการแข่งขัน :</label>
         <select class="form-control select2" style="width: 12%;" id="list" onchange="myFunctions()">
