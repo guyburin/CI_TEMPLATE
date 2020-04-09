@@ -600,14 +600,6 @@
             <td>0812345678<br>0812345687</td>
             <td>-<br>-</td>
           </tr>
-          
-          
-        </table>
-      </div>
-    </form>
-    <form id="form10" hidden>
-    <div style="overflow-x:auto;">
-    <table>
           <tr>
             <th>ลำดับ</th>
             <th>ชื่อทีม</th>
@@ -650,7 +642,6 @@
             <th>ชื่อสโมสร</th>
             <th>ประเภทที่ลงแข่ง</th>
             <th>เบอร์ติดต่อ</th>
-            <th>ประวัติการแข่งขันในปีล่าสุด </th>
           </tr>
           <tr>
             <td>1</td>
@@ -680,15 +671,16 @@
             <th>อายุ</th>
             <th>รายการแข่ง</th>
             <th>ชื่อสโมสร</th>
-            <th>ประเภทที่ลงแข่ง</th>
+            <th>รุ่นที่แข่ง</th>
             <th>เบอร์ติดต่อ</th>
-            <th>ประวัติการแข่งขันในปีล่าสุด </th>
           </tr>
           <tr>
             <td>ไม่มีข้อมูล</td>
            
           </tr>
           
+            <!-- /.box-header -->
+            <div class="box-body table-responsive no-padding">
           
         </table>
       </div>
