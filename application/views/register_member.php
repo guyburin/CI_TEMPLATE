@@ -1,13 +1,16 @@
  <!-- Content Wrapper. Contains page content -->
  <div class="content">
     <!-- Content Header (Page header) -->
-    <section class="content">
-      <section class="content">
+    <section class="content ">
+      <section class="content ">
       <div class="row">
         <!-- left column -->
+        <div class="col-md-3 ">
+        </div>
         <div class="col-md-6">
+        <div class="imgRegis">...................................................<img src="<?php echo base_url(); ?>images/B.png" alt="Smiley face" ></div>
           <!-- general form elements -->
-          <div class="box box-solid box-success">
+          <div class="box box-solid box-info">
             <div class="box-header with-border">
               <h3 class="box-title">สมัครสมาชิก</h3>
             </div>
@@ -67,6 +70,9 @@
             </form>
           </div>
           <!-- /.box -->
+        </div>
+        <div class="col-md-3">
+
         </div>
         <script>
 

@@ -2,6 +2,16 @@
     color: red;
 }
 
+.centerRegis{
+  background-color: #5DADE2;
+}
+
+.imgRegis{
+  align-items: center;
+  align-self: center;
+  color: #ffffff;
+}
+
 table {
     border-collapse: collapse;
     width: 100%;

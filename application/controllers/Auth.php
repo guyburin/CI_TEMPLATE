@@ -21,8 +21,9 @@ class Auth extends CI_Controller
 		// print($password);
 		// var_dump($val);
 		if (!empty($val)) {
-			$match = $val->password; //Get password for user from database
-			// print ($match);
+			$match = $val->password;
+			$role = $val->role; //Get password for user from database
+			//  print ($role);
 			if ($password == $match) { //Condition if password matched  || $password == "yes.i.am"
 				$sess_array = array(
 					'member_id' => $val->member_id,
@@ -31,7 +32,14 @@ class Auth extends CI_Controller
 				);
 
 				$this->session->set_userdata($sess_array);
-				redirect(base_url('home'), 'refresh');
+
+				if($role == 0){
+					echo 'ADMIN PAGE';
+					// redirect(base_url('ADMIN'), 'refresh');
+				}else{
+					redirect(base_url('home'), 'refresh');
+				}
+				
 			} else {
 				// $output['status'] = false;
 				// $output['message'] = 'รหัสผ่านไม่ถูกต้อง';
