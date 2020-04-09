@@ -200,19 +200,10 @@
 
 		</script>
     <div class="row">
-      <div class="col-md-4">
-
-      </div>
-      <div class="col-md-4">
-
-      </div>
-      <div class="col-md-4">
-
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="list">ประเภทการแข่งขัน :</label>
-        <select class="form-control select2" style="width: 12%;" id="list" onchange="myFunctions()">
+      <div class="col-md-3">
+      <div class="form-group">
+      <label for="list">รายการแข่งขัน :</label>
+        <select class="form-control select2"  id="list" onchange="myFunctions()">
           <option value="">เลือกรายการแข่งขัน</option>
           <option value="Walailak1">วลัยลักษณ์ครั้งที่ 1</option>
           <option value="Walailak2">วลัยลักษณ์ครั้งที่ 2</option>
@@ -224,19 +215,19 @@
     <form id="type" hidden>
       <div class="form-group">
         <label for="generation">ประเภทการแข่งขัน :</label>
-          <select class="form-control select2" style="width: 12%;" id="generation" onchange="myFunction()">
+          <select class="form-control select2"  id="generation" onchange="myFunction()">
             <option value="">เลือกประเภทการแข่งขัน</option>
             <option value="Youth">เยาวชน</option>
             <option value="national">ประชาชน</option>
           </select>
       </div>
     </form>
-
-
-    <form id="competition1" hidden>
+      </div>
+      <div class="col-md-3">
+      <form id="competition1" hidden>
     <div class="form-group">
         <label for="competition_type">ประเภทผู้แข่งขัน :</label>
-          <select class="form-control select2" style="width: 12%;" id="competition_type" onchange="myFunction()">
+          <select class="form-control select2"  id="competition_type" onchange="myFunction()">
             <option value="">เลือกประเภทผู้แข่งขัน</option>
             <option value="Women2">หญิงเดี่ยว</option>
             <option value="Men2">ชายเดี่ยว</option>
@@ -245,7 +236,7 @@
 
       <div class="form-group">
         <label for="competition_type">รุ่นอายุ :</label>
-          <select class="form-control select2" style="width: 12%;" id="competition_type" onchange="myFunction()">
+          <select class="form-control select2"  id="competition_type" onchange="myFunction()">
             <option value="">เลือกรุ่นอายุ</option>
             <option value="๊U9">อายุไม่เกิน 8 ปี</option>
             <option value="U11">อายุไม่เกิน 10 ปี</option>
@@ -295,7 +286,7 @@
 
       <div class="form-group">
         <label for="competition_type">ประเภทผู้แข่งขัน :</label>
-          <select class="form-control select2" style="width: 12%;" id="competition_type" onchange="myFunction()">
+          <select class="form-control select2"  id="competition_type" onchange="myFunction()">
             <option value="">เลือกประเภทผู้แข่งขัน</option>
             <option value="men2">ชายคู่</option>
             <option value="Women2">หญิงคู่</option>
@@ -305,7 +296,7 @@
 
       <div class="form-group">
         <label for="competition_type">รุ่นผู้แข่งขัน :</label>
-          <select class="form-control select2" style="width: 12%;" id="competition_type" onchange="myFunction()">
+          <select class="form-control select2"  id="competition_type" onchange="myFunction()">
             <option value="">เลือกรุ่นผู้แข่งขัน</option>
             <option value="handN">มือ N</option>
             <option value="handS-">มือ S-</option>
@@ -334,6 +325,15 @@
       </select> -->
 
       </form>
+      </div>
+      <div class="col-md-6">
+
+      </div>
+    </div>
+    
+
+
+    
 
       <br><br>
       <form id="form1" hidden>
@@ -344,9 +344,7 @@
             <h3 class="box-title">การแข่งขันรอบแบ่งกลุ่ม แมทช์ #01</h3>
               <div class="box-tools">
                 <div class="input-group input-group-sm hidden-xs" style="width: 150px;">
-                  <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
                   <div class="input-group-btn">
-                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                   </div>
                 </div>
               </div>
@@ -402,9 +400,7 @@
             <h3 class="box-title">การแข่งขันรอบแบ่งกลุ่ม แมทช์ #02</h3>
               <div class="box-tools">
                 <div class="input-group input-group-sm hidden-xs" style="width: 150px;">
-                  <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
                   <div class="input-group-btn">
-                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                   </div>
                 </div>
               </div>
@@ -463,9 +459,7 @@
             <h3 class="box-title">การแข่งขันรอบแบ่งกลุ่ม แมทช์ #01</h3>
               <div class="box-tools">
                 <div class="input-group input-group-sm hidden-xs" style="width: 150px;">
-                  <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
                   <div class="input-group-btn">
-                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                   </div>
                 </div>
               </div>
@@ -512,9 +506,7 @@
             <h3 class="box-title">การแข่งขันรอบแบ่งกลุ่ม แมทช์ #02</h3>
               <div class="box-tools">
                 <div class="input-group input-group-sm hidden-xs" style="width: 150px;">
-                  <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
                   <div class="input-group-btn">
-                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                   </div>
                 </div>
               </div>
