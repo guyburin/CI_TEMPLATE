@@ -214,8 +214,8 @@
       <form id="competition2" hidden>
       <label for="competition_type"> ประเภทผู้แข่งขัน :</label>
       <select id="competition_type">
+        <option value="men2">ชายคู่</option>
         <option value="Women2">หญิงคู่</option>
-        <option value="Men2">ชายคู่</option>
         <option value="Men2">คู่ชาย-หญิง</option>
       </select>
 
@@ -258,26 +258,26 @@
               </tr>
               <tr>
                 <td>18.00 น.</td>
-                <td>อนาตาเซีย</td>
-                <td>หวังฟางเจ้า</td>
+                <td>ชุติมา อนันตกูล</td>
+                <td>สัณห์สินี รักเนียม</td>
                 <td>9 - 10</td>
                 <td>7 - 10</td>
                 <td>-</td>
-                <td><span class="label label-success">หวังฟางเจ้า</span></td>
+                <td><span class="label label-success">สัณห์สินี รักเนียม</span></td>
               </tr>
               <tr>
                 <td>18.30 น.</td>
-                <td>มิสโคโรน่า</td>
-                <td>มิสโควิด-19</td>
+                <td>จิดาภา มูสิกนิลพันธ์</td>
+                <td>ณัฏฐณิชา สาขะญาณ</td>
                 <td>5 - 5</td>
                 <td>7 - 7</td>
                 <td> 10 - 8</td>
-                <td><span class="label label-success">มิสโคโรน่า</span></td>        
+                <td><span class="label label-success">จิดาภา มูสิกนิลพันธ์</span></td>        
               </tr>
               <tr>
                 <td>19.00 น.</td>
-                <td>เจนนี</td>
-                <td>เยจิ</td>
+                <td>ณัฐธิดา จำปา</td>
+                <td>ณีรนุช พันธุภาส</td>
                 <td>10 - 10</td>
                 <td></td>
                 <td></td>
@@ -334,8 +334,8 @@
               </tr>
               <tr>
                 <td>20.30 น.</td>
-                <td>เจนนี</td>
-                <td>เยจิ</td>
+                <td>ปิยมินทร์ ใจมา</td>
+                <td>จิราวรรณ ช่วยแก้ว</td>
                 <td>10 - 10</td>
                 <td></td>
                 <td></td>
@@ -382,16 +382,16 @@
                 <td>9 - 10</td>
                 <td>7 - 10</td>
                 <td>-</td>
-                <td><span class="label label-success">กลุ่ม A</span></td>
+                <td><span class="label label-success">กลุ่ม B</span></td>
               </tr>
               <tr>
                 <td>18.30 น.</td>
                 <td>พงศธร รักทอง<br>สุทธิพงษ์ จินตาแก้ว</td>
-                <td>ชัชวาล สุคนธปฏิภาค<br></td>
+                <td>ชัชวาล สุคนธปฏิภาค<br>ตู่ ภพธร</td>
                 <td>9 - 0</td>
                 <td> - </td>
                 <td>  - </td>
-                <td><span class="label label-success">กลุ่ม B</span></td>        
+                <td><span class="label label-success">กลุ่ม A</span></td>        
               </tr>
             </table>
             </div>
@@ -426,21 +426,21 @@
               </tr>
               <tr>
                 <td>19.00 น.</td>
-                <td>อคาเชีย<br></td>
-                <td>โทริโกะ<br></td>
+                <td>จักรพงษ์ กระต่ายทอง<br>โชติวิชช์ วรเดช</td>
+                <td>ธิติพงศ์ ปุรินสุวรรณ<br>นลธวัช แก้วจีน</td>
                 <td>9 - 10</td>
                 <td>7 - 10</td>
                 <td>-</td>
-                <td><span class="label label-success">โทริโกะ</span></td>
+                <td><span class="label label-success">กลุ่ม B</span></td>
               </tr>
               <tr>
                 <td>19.30 น.</td>
-                <td>ไซตามะ<br></td>
-                <td>โงกุน<br></td>
-                <td>999 - 0</td>
+                <td>วรเมธ ขวัญนิมิตร<br>วิทวัส ช่วยพนัง</td>
+                <td>สิทธินนท์ เดิมหลิ่ม<br>สุวิจักขณ์ พิศสุพรรณ</td>
+                <td>9 - 0</td>
                 <td> - </td>
                 <td>  - </td>
-                <td><span class="label label-success">ไซตามะ</span></td>        
+                <td><span class="label label-success">กลุ่ม A</span></td>        
               </tr>
             </table>
             </div>
