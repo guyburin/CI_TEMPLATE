@@ -167,13 +167,18 @@
     <!-- Main content -->
     <br>
     <section class="content">
-    <label for="generation">ประเภทการแข่งขัน :</label>
-      <select id="generation" onchange="myFunction()">
-        <option value="Youth">เยาวชน</option>
-        <option value="national">ประชาชน</option>
-      </select>
-
       <script>
+
+      function myFunctions() {
+				var x = document.getElementById("list").value;
+				var y = $("#list").val();
+				if (y == "Walailak2") {
+          $("#type").show();
+          $("#btn").show();
+				} 
+				document.getElementById("demo").innerHTML = "You selected: " + y;
+			}
+      
 			function myFunction() {
 				var x = document.getElementById("generation").value;
 				var y = $("#generation").val();
@@ -194,40 +199,141 @@
 			}
 
 		</script>
-    <form id="competition1" hidden>
-    <label for="competition_type"> ประเภทผู้แข่งขัน :</label>
+    <div class="row">
+      <div class="col-md-3">
+      <div class="form-group">
+      <label for="list">รายการแข่งขัน :</label>
+        <select class="form-control select2"  id="list" onchange="myFunctions()">
+          <option value="">เลือกรายการแข่งขัน</option>
+          <option value="Walailak1">วลัยลักษณ์ครั้งที่ 1</option>
+          <option value="Walailak2">วลัยลักษณ์ครั้งที่ 2</option>
+          <option value="Walailak3">วลัยลักษณ์ครั้งที่ 3</option>
+          <option value="Walailak4">วลัยลักษณ์ครั้งที่ 4</option>
+        </select>
+    </div>
+
+    <form id="type" hidden>
+      <div class="form-group">
+        <label for="generation">ประเภทการแข่งขัน :</label>
+          <select class="form-control select2"  id="generation" onchange="myFunction()">
+            <option value="">เลือกประเภทการแข่งขัน</option>
+            <option value="Youth">เยาวชน</option>
+            <option value="national">ประชาชน</option>
+          </select>
+      </div>
+    </form>
+      </div>
+      <div class="col-md-3">
+      <form id="competition1" hidden>
+    <div class="form-group">
+        <label for="competition_type">ประเภทผู้แข่งขัน :</label>
+          <select class="form-control select2"  id="competition_type" onchange="myFunction()">
+            <option value="">เลือกประเภทผู้แข่งขัน</option>
+            <option value="Women2">หญิงเดี่ยว</option>
+            <option value="Men2">ชายเดี่ยว</option>
+          </select>
+      </div>
+
+      <div class="form-group">
+        <label for="competition_type">รุ่นอายุ :</label>
+          <select class="form-control select2"  id="competition_type" onchange="myFunction()">
+            <option value="">เลือกรุ่นอายุ</option>
+            <option value="๊U9">อายุไม่เกิน 8 ปี</option>
+            <option value="U11">อายุไม่เกิน 10 ปี</option>
+            <option value="U13">อายุไม่เกิน 12 ปี</option>
+            <option value="U15">อายุไม่เกิน 14 ปี</option>
+            <option value="U17">อายุไม่เกิน 16 ปี</option>
+          </select>
+      </div>
+
+      <!-- <label for="list">ประเภทการแข่งขัน :</label>
+        <select id="list" onchange="myFunctions()">
+          <option value="">เลือกรายการแข่งขัน</option>
+          <option value="Walailak1">วลัยลักษณ์ครั้งที่ 1</option>
+          <option value="Walailak2">วลัยลักษณ์ครั้งที่ 2</option>
+          <option value="Walailak3">วลัยลักษณ์ครั้งที่ 3</option>
+          <option value="Walailak4">วลัยลักษณ์ครั้งที่ 4</option>
+        </select> -->
+
+      <!-- <form id="type" hidden>
+      <label for="generation">ประเภทการแข่งขัน :</label>
+        <select id="generation" onchange="myFunction()">
+        <option value="">เลือกประเภทการแข่งขัน</option>
+          <option value="Youth">เยาวชน</option>
+          <option value="national">ประชาชน</option>
+        </select>
+    </form> -->
+
+      <!-- <label for="competition_type"> ประเภทผู้แข่งขัน :</label>
       <select id="competition_type">
+      <option value="">เลือกประเภทผู้แข่งขัน</option>
         <option value="Women2">หญิงเดี่ยว</option>
         <option value="Men2">ชายเดี่ยว</option>
-      </select>
+      </select> -->
 
-      <label for="competition_type"> รุ่นอายุ :</label>
+      <!-- <label for="competition_type"> รุ่นอายุ :</label>
       <select id="competition_type">
+        <option value="">เลือกรุ่นอายุ</option>
         <option value="๊U9">อายุไม่เกิน 8 ปี</option>
         <option value="U11">อายุไม่เกิน 10 ปี</option>
         <option value="U13">อายุไม่เกิน 12 ปี</option>
         <option value="U15">อายุไม่เกิน 14 ปี</option>
         <option value="U17">อายุไม่เกิน 16 ปี</option>
-      </select>
+      </select> -->
       </form>
 
       <form id="competition2" hidden>
-      <label for="competition_type"> ประเภทผู้แข่งขัน :</label>
-      <select id="competition_type">
-        <option value="Women2">หญิงคู่</option>
-        <option value="Men2">ชายคู่</option>
-        <option value="Men2">คู่ชาย-หญิง</option>
-      </select>
 
-      <label for="competition_type"> รุ่นผู้แข่งขัน :</label>
+      <div class="form-group">
+        <label for="competition_type">ประเภทผู้แข่งขัน :</label>
+          <select class="form-control select2"  id="competition_type" onchange="myFunction()">
+            <option value="">เลือกประเภทผู้แข่งขัน</option>
+            <option value="men2">ชายคู่</option>
+            <option value="Women2">หญิงคู่</option>
+            <option value="Men2">คู่ชาย-หญิง</option>
+          </select>
+      </div>
+
+      <div class="form-group">
+        <label for="competition_type">รุ่นผู้แข่งขัน :</label>
+          <select class="form-control select2"  id="competition_type" onchange="myFunction()">
+            <option value="">เลือกรุ่นผู้แข่งขัน</option>
+            <option value="handN">มือ N</option>
+            <option value="handS-">มือ S-</option>
+            <option value="handS+">มือ S+</option>
+            <option value="handP-">มือ P-</option>
+            <option value="handP+C">มือ P+C</option>
+          </select>
+      </div>
+
+      <!-- <label for="competition_type"> ประเภทผู้แข่งขัน :</label>
       <select id="competition_type">
+        <option value="">เลือกประเภทผู้แข่งขัน</option>
+        <option value="men2">ชายคู่</option>
+        <option value="Women2">หญิงคู่</option>
+        <option value="Men2">คู่ชาย-หญิง</option>
+      </select> -->
+
+      <!-- <label for="competition_type"> รุ่นผู้แข่งขัน :</label>
+      <select id="competition_type">
+        <option value="">เลือกรุ่นผู้แข่งขัน</option>
         <option value="handN">มือ N</option>
         <option value="handS-">มือ S-</option>
         <option value="handS+">มือ S+</option>
         <option value="handP-">มือ P-</option>
         <option value="handP+C">มือ P+C</option>
-      </select>
+      </select> -->
+
       </form>
+      </div>
+      <div class="col-md-6">
+
+      </div>
+    </div>
+    
+
+
+    
 
       <br><br>
       <form id="form1" hidden>
@@ -238,9 +344,7 @@
             <h3 class="box-title">การแข่งขันรอบแบ่งกลุ่ม แมทช์ #01</h3>
               <div class="box-tools">
                 <div class="input-group input-group-sm hidden-xs" style="width: 150px;">
-                  <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
                   <div class="input-group-btn">
-                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                   </div>
                 </div>
               </div>
@@ -258,26 +362,26 @@
               </tr>
               <tr>
                 <td>18.00 น.</td>
-                <td>อนาตาเซีย</td>
-                <td>หวังฟางเจ้า</td>
+                <td>ชุติมา อนันตกูล</td>
+                <td>สัณห์สินี รักเนียม</td>
                 <td>9 - 10</td>
                 <td>7 - 10</td>
                 <td>-</td>
-                <td><span class="label label-success">หวังฟางเจ้า</span></td>
+                <td><span class="label label-success">สัณห์สินี รักเนียม</span></td>
               </tr>
               <tr>
                 <td>18.30 น.</td>
-                <td>มิสโคโรน่า</td>
-                <td>มิสโควิด-19</td>
+                <td>จิดาภา มูสิกนิลพันธ์</td>
+                <td>ณัฏฐณิชา สาขะญาณ</td>
                 <td>5 - 5</td>
                 <td>7 - 7</td>
                 <td> 10 - 8</td>
-                <td><span class="label label-success">มิสโคโรน่า</span></td>        
+                <td><span class="label label-success">จิดาภา มูสิกนิลพันธ์</span></td>        
               </tr>
               <tr>
                 <td>19.00 น.</td>
-                <td>เจนนี</td>
-                <td>เยจิ</td>
+                <td>ณัฐธิดา จำปา</td>
+                <td>ณีรนุช พันธุภาส</td>
                 <td>10 - 10</td>
                 <td></td>
                 <td></td>
@@ -296,9 +400,7 @@
             <h3 class="box-title">การแข่งขันรอบแบ่งกลุ่ม แมทช์ #02</h3>
               <div class="box-tools">
                 <div class="input-group input-group-sm hidden-xs" style="width: 150px;">
-                  <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
                   <div class="input-group-btn">
-                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                   </div>
                 </div>
               </div>
@@ -334,8 +436,8 @@
               </tr>
               <tr>
                 <td>20.30 น.</td>
-                <td>เจนนี</td>
-                <td>เยจิ</td>
+                <td>ปิยมินทร์ ใจมา</td>
+                <td>จิราวรรณ ช่วยแก้ว</td>
                 <td>10 - 10</td>
                 <td></td>
                 <td></td>
@@ -357,9 +459,7 @@
             <h3 class="box-title">การแข่งขันรอบแบ่งกลุ่ม แมทช์ #01</h3>
               <div class="box-tools">
                 <div class="input-group input-group-sm hidden-xs" style="width: 150px;">
-                  <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
                   <div class="input-group-btn">
-                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                   </div>
                 </div>
               </div>
@@ -382,16 +482,16 @@
                 <td>9 - 10</td>
                 <td>7 - 10</td>
                 <td>-</td>
-                <td><span class="label label-success">กลุ่ม A</span></td>
+                <td><span class="label label-success">กลุ่ม B</span></td>
               </tr>
               <tr>
                 <td>18.30 น.</td>
                 <td>พงศธร รักทอง<br>สุทธิพงษ์ จินตาแก้ว</td>
-                <td>ชัชวาล สุคนธปฏิภาค<br></td>
+                <td>ชัชวาล สุคนธปฏิภาค<br>ตู่ ภพธร</td>
                 <td>9 - 0</td>
                 <td> - </td>
                 <td>  - </td>
-                <td><span class="label label-success">กลุ่ม B</span></td>        
+                <td><span class="label label-success">กลุ่ม A</span></td>        
               </tr>
             </table>
             </div>
@@ -406,9 +506,7 @@
             <h3 class="box-title">การแข่งขันรอบแบ่งกลุ่ม แมทช์ #02</h3>
               <div class="box-tools">
                 <div class="input-group input-group-sm hidden-xs" style="width: 150px;">
-                  <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
                   <div class="input-group-btn">
-                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                   </div>
                 </div>
               </div>
@@ -426,21 +524,21 @@
               </tr>
               <tr>
                 <td>19.00 น.</td>
-                <td>อคาเชีย<br></td>
-                <td>โทริโกะ<br></td>
+                <td>จักรพงษ์ กระต่ายทอง<br>โชติวิชช์ วรเดช</td>
+                <td>ธิติพงศ์ ปุรินสุวรรณ<br>นลธวัช แก้วจีน</td>
                 <td>9 - 10</td>
                 <td>7 - 10</td>
                 <td>-</td>
-                <td><span class="label label-success">โทริโกะ</span></td>
+                <td><span class="label label-success">กลุ่ม B</span></td>
               </tr>
               <tr>
                 <td>19.30 น.</td>
-                <td>ไซตามะ<br></td>
-                <td>โงกุน<br></td>
-                <td>999 - 0</td>
+                <td>วรเมธ ขวัญนิมิตร<br>วิทวัส ช่วยพนัง</td>
+                <td>สิทธินนท์ เดิมหลิ่ม<br>สุวิจักขณ์ พิศสุพรรณ</td>
+                <td>9 - 0</td>
                 <td> - </td>
                 <td>  - </td>
-                <td><span class="label label-success">ไซตามะ</span></td>        
+                <td><span class="label label-success">กลุ่ม A</span></td>        
               </tr>
             </table>
             </div>

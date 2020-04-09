@@ -39,6 +39,11 @@
                   <label for="exampleInputEmail1">นามสกุล</label>
                   <input type="text" class="form-control" id="exampleInputEmail1" placeholder="นามสกุล" name="Sername"><br/>
                 </div>
+                <div class="col-lg-6">
+                  <label for="exampleInputEmail1">ชื่อเล่น</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="ชื่อเล่น" name="Nickname"><br/>
+                </div>
+               
                 <div class="col-lg-12">
                   <label for="sex">เพศ</label><br/>
                   <input type="radio" id="male" name="gender" value="male" name="sex" value="0">
@@ -62,11 +67,14 @@
                   <label for="exampleInputPassword1">line ID</label>
                   <input type="text" class="form-control" id="exampleInputPassword1" placeholder="ID LINE" name="Line"><br/>
                 </div>
+                <div class="col-lg-12">
+                    <div class="box-footer">
+                    <button type="submit" class="btn btn-primary" onclick="hasSelectedRow()">Submit</button>
+                    <button type="" class="btn btn-danger">Cancle</button>
+                  </div>
+                </div>
                
-              <div class="box-footer">
-                <button type="submit" class="btn btn-primary" onclick="hasSelectedRow()">Submit</button>
-                <button type="" class="btn btn-danger">Cancle</button>
-              </div>
+             
             </form>
           </div>
           <!-- /.box -->
