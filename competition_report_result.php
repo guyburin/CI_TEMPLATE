@@ -167,13 +167,18 @@
     <!-- Main content -->
     <br>
     <section class="content">
-    <label for="generation">ประเภทการแข่งขัน :</label>
-      <select id="generation" onchange="myFunction()">
-        <option value="Youth">เยาวชน</option>
-        <option value="national">ประชาชน</option>
-      </select>
-
       <script>
+
+      function myFunctions() {
+				var x = document.getElementById("list").value;
+				var y = $("#list").val();
+				if (y == "Walailak2") {
+          $("#type").show();
+          $("#btn").show();
+				} 
+				document.getElementById("demo").innerHTML = "You selected: " + y;
+			}
+      
 			function myFunction() {
 				var x = document.getElementById("generation").value;
 				var y = $("#generation").val();
@@ -194,39 +199,130 @@
 			}
 
 		</script>
+
+    <div class="form-group">
+      <label for="list">ประเภทการแข่งขัน :</label>
+        <select class="form-control select2" style="width: 12%;" id="list" onchange="myFunctions()">
+          <option value="">เลือกรายการแข่งขัน</option>
+          <option value="Walailak1">วลัยลักษณ์ครั้งที่ 1</option>
+          <option value="Walailak2">วลัยลักษณ์ครั้งที่ 2</option>
+          <option value="Walailak3">วลัยลักษณ์ครั้งที่ 3</option>
+          <option value="Walailak4">วลัยลักษณ์ครั้งที่ 4</option>
+        </select>
+    </div>
+
+    <form id="type" hidden>
+      <div class="form-group">
+        <label for="generation">ประเภทการแข่งขัน :</label>
+          <select class="form-control select2" style="width: 12%;" id="generation" onchange="myFunction()">
+            <option value="">เลือกประเภทการแข่งขัน</option>
+            <option value="Youth">เยาวชน</option>
+            <option value="national">ประชาชน</option>
+          </select>
+      </div>
+    </form>
+
+
     <form id="competition1" hidden>
-    <label for="competition_type"> ประเภทผู้แข่งขัน :</label>
+    <div class="form-group">
+        <label for="competition_type">ประเภทผู้แข่งขัน :</label>
+          <select class="form-control select2" style="width: 12%;" id="competition_type" onchange="myFunction()">
+            <option value="">เลือกประเภทผู้แข่งขัน</option>
+            <option value="Women2">หญิงเดี่ยว</option>
+            <option value="Men2">ชายเดี่ยว</option>
+          </select>
+      </div>
+
+      <div class="form-group">
+        <label for="competition_type">รุ่นอายุ :</label>
+          <select class="form-control select2" style="width: 12%;" id="competition_type" onchange="myFunction()">
+            <option value="">เลือกรุ่นอายุ</option>
+            <option value="๊U9">อายุไม่เกิน 8 ปี</option>
+            <option value="U11">อายุไม่เกิน 10 ปี</option>
+            <option value="U13">อายุไม่เกิน 12 ปี</option>
+            <option value="U15">อายุไม่เกิน 14 ปี</option>
+            <option value="U17">อายุไม่เกิน 16 ปี</option>
+          </select>
+      </div>
+
+      <!-- <label for="list">ประเภทการแข่งขัน :</label>
+        <select id="list" onchange="myFunctions()">
+          <option value="">เลือกรายการแข่งขัน</option>
+          <option value="Walailak1">วลัยลักษณ์ครั้งที่ 1</option>
+          <option value="Walailak2">วลัยลักษณ์ครั้งที่ 2</option>
+          <option value="Walailak3">วลัยลักษณ์ครั้งที่ 3</option>
+          <option value="Walailak4">วลัยลักษณ์ครั้งที่ 4</option>
+        </select> -->
+
+      <!-- <form id="type" hidden>
+      <label for="generation">ประเภทการแข่งขัน :</label>
+        <select id="generation" onchange="myFunction()">
+        <option value="">เลือกประเภทการแข่งขัน</option>
+          <option value="Youth">เยาวชน</option>
+          <option value="national">ประชาชน</option>
+        </select>
+    </form> -->
+
+      <!-- <label for="competition_type"> ประเภทผู้แข่งขัน :</label>
       <select id="competition_type">
+      <option value="">เลือกประเภทผู้แข่งขัน</option>
         <option value="Women2">หญิงเดี่ยว</option>
         <option value="Men2">ชายเดี่ยว</option>
-      </select>
+      </select> -->
 
-      <label for="competition_type"> รุ่นอายุ :</label>
+      <!-- <label for="competition_type"> รุ่นอายุ :</label>
       <select id="competition_type">
+        <option value="">เลือกรุ่นอายุ</option>
         <option value="๊U9">อายุไม่เกิน 8 ปี</option>
         <option value="U11">อายุไม่เกิน 10 ปี</option>
         <option value="U13">อายุไม่เกิน 12 ปี</option>
         <option value="U15">อายุไม่เกิน 14 ปี</option>
         <option value="U17">อายุไม่เกิน 16 ปี</option>
-      </select>
+      </select> -->
       </form>
 
       <form id="competition2" hidden>
-      <label for="competition_type"> ประเภทผู้แข่งขัน :</label>
+
+      <div class="form-group">
+        <label for="competition_type">ประเภทผู้แข่งขัน :</label>
+          <select class="form-control select2" style="width: 12%;" id="competition_type" onchange="myFunction()">
+            <option value="">เลือกประเภทผู้แข่งขัน</option>
+            <option value="men2">ชายคู่</option>
+            <option value="Women2">หญิงคู่</option>
+            <option value="Men2">คู่ชาย-หญิง</option>
+          </select>
+      </div>
+
+      <div class="form-group">
+        <label for="competition_type">รุ่นผู้แข่งขัน :</label>
+          <select class="form-control select2" style="width: 12%;" id="competition_type" onchange="myFunction()">
+            <option value="">เลือกรุ่นผู้แข่งขัน</option>
+            <option value="handN">มือ N</option>
+            <option value="handS-">มือ S-</option>
+            <option value="handS+">มือ S+</option>
+            <option value="handP-">มือ P-</option>
+            <option value="handP+C">มือ P+C</option>
+          </select>
+      </div>
+
+      <!-- <label for="competition_type"> ประเภทผู้แข่งขัน :</label>
       <select id="competition_type">
+        <option value="">เลือกประเภทผู้แข่งขัน</option>
         <option value="men2">ชายคู่</option>
         <option value="Women2">หญิงคู่</option>
         <option value="Men2">คู่ชาย-หญิง</option>
-      </select>
+      </select> -->
 
-      <label for="competition_type"> รุ่นผู้แข่งขัน :</label>
+      <!-- <label for="competition_type"> รุ่นผู้แข่งขัน :</label>
       <select id="competition_type">
+        <option value="">เลือกรุ่นผู้แข่งขัน</option>
         <option value="handN">มือ N</option>
         <option value="handS-">มือ S-</option>
         <option value="handS+">มือ S+</option>
         <option value="handP-">มือ P-</option>
         <option value="handP+C">มือ P+C</option>
-      </select>
+      </select> -->
+
       </form>
 
       <br><br>
