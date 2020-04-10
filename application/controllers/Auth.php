@@ -41,9 +41,9 @@ class Auth extends CI_Controller
 				}
 				
 			} else {
-				// $output['status'] = false;
-				// $output['message'] = 'รหัสผ่านไม่ถูกต้อง';
-				// $this->response($output);
+				 $output['status'] = false;
+				 $output['message'] = 'รหัสผ่านไม่ถูกต้อง';
+				//  $this->response($output);
 				  redirect(base_url('login'), 'refresh');
 			}
 		}
