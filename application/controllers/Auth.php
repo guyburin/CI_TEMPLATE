@@ -10,6 +10,7 @@ class Auth extends CI_Controller
 		$this->load->model('User_model');
 	}
 
+	
 	public function login()
 	{
 		$username = $this->input->post('txt_username');
@@ -37,7 +38,7 @@ class Auth extends CI_Controller
 					echo 'ADMIN PAGE';
 					// redirect(base_url('ADMIN'), 'refresh');
 				}else{
-					redirect(base_url('home'), 'refresh');
+					redirect(base_url('home'), 'refresh');					
 				}
 				
 			} else {
@@ -59,6 +60,7 @@ class Auth extends CI_Controller
 	{
 		$Username = $this->input->post('Username');
 		$Password = $this->input->post('Password');
+		$Password_C = $this->input->post('C_Password');
 		// $p = password_hash($Password, PASSWORD_BCRYPT);
 		$Name = $this->input->post('Name');
 		$Sername = $this->input->post('Sername');
@@ -69,21 +71,30 @@ class Auth extends CI_Controller
 		$Phone = $this->input->post('Phone');
 		$Line = $this->input->post('Line');
 		// print($Nickname);
-		$document = [
-            "username" => $Username,
-            "password" => $Password,
-            "name" => $Name,
-            "sername" => $Sername,
-            "nick_name" => $Nickname,
-            "club" => $Club,
-            "line_id" => $Line,
-            "phone" => $Phone,
-            "birthday" => $date,
-            "role" => 1
-		];
-		// var_dump($document);
-		$result = $this->User_model->insert_user($document);
-		// $db = $this->db;
-		// $result = $db->insert($Username,$Password,$Name ,$Sername,$Nickname,$date, $Club,$Phone ,$Line);
-	}
+		// if($Password==$Password_C){
+		$val = $this->User_model->get_user_data($Username);
+		if (!empty($val)) {
+			echo "<script>alert('Usernameนี้ไม่สามารถใช้งานได้')</script>";	
+			redirect(base_url('RegisterMember'), 'refresh');		
+		} else {
+			echo "<script>alert('Usernameนี้สามารถใช้งานได้')</script>";
+			echo "<script>alert('สมัครเสร็จสิ้น')</script>";	
+			$document = [
+				"username" => $Username,
+				"password" => $Password,
+				"name" => $Name,
+				"sername" => $Sername,
+				"nick_name" => $Nickname,
+				"club" => $Club,
+				"line_id" => $Line,
+				"phone" => $Phone,
+				"birthday" => $date,
+				"role" => 1
+			];
+			$result = $this->User_model->insert_user($document);
+			redirect(base_url('login'), 'refresh');
+		}
+		
+			
+		}
 }

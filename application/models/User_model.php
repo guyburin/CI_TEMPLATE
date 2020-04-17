@@ -26,6 +26,7 @@ class User_model  extends CI_Model {
         // INSERT INTO MyGuests (firstname, lastname, email)VALUES ('John', 'Doe', 'john@example.com')
     }
 
+    
     public function insert_user($data)
     {
         // return $this->db->insert('users', $data);
