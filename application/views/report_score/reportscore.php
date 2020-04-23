@@ -133,27 +133,10 @@
 															<td>สัณห์สินี รักเนียม</td>
 															<td>9 - 10</td>
 															<td>7 - 10</td>
-															<td>-</td>
+															<td>5 - 6</td>
 															<td><span class="label label-success">สัณห์สินี รักเนียม</span></td>
 														</tr>
-														<!-- <tr>
-                  <td>18.30 น.</td>
-                  <td>จิดาภา มูสิกนิลพันธ์</td>
-                  <td>ณัฏฐณิชา สาขะญาณ</td>
-                  <td>5 - 5</td>
-                  <td>7 - 7</td>
-                  <td> 10 - 8</td>
-                  <td><span class="label label-success">จิดาภา มูสิกนิลพันธ์</span></td>
-                </tr>
-                <tr>
-                  <td>19.00 น.</td>
-                  <td>ณัฐธิดา จำปา</td>
-                  <td>ณีรนุช พันธุภาส</td>
-                  <td>10 - 10</td>
-                  <td></td>
-                  <td></td>
-                  <td><span class="label label-primary">อยู่ระหว่างแข่งขัน</span></td>
-                </tr> -->
+														
 													</table>
 												</div>
 											</div>
@@ -189,7 +172,7 @@
 															<td>ปัญญพัฒน์ เจือบุญ</td>
 															<td>9 - 10</td>
 															<td>7 - 10</td>
-															<td>-</td>
+															<td> 6 - 14</td>
 															<td><span class="label label-success">ปัญญพัฒน์ เจือบุญ</span></td>
 														</tr>
 														<!-- <tr>
@@ -248,7 +231,7 @@
 															<td>นฤเบศ รีวรรณ<br>บุรินทร์ พันธ์ชาติ</td>
 															<td>9 - 10</td>
 															<td>7 - 10</td>
-															<td>-</td>
+															<td>2 - 10</td>
 															<td><span class="label label-success">ทีม B</span></td>
 														</tr>
 														<!-- <tr>
@@ -295,7 +278,7 @@
 															<td>ธิติพงศ์ ปุรินสุวรรณ<br>นลธวัช แก้วจีน</td>
 															<td>9 - 10</td>
 															<td>7 - 10</td>
-															<td>-</td>
+															<td>5 - 8</td>
 															<td><span class="label label-success">ทีม B</span></td>
 														</tr>
 														<!-- <tr>
