@@ -9,20 +9,8 @@ class ShowName extends CI_Controller {
 		$this->load->view('layout/header');
 		$this->load->view('layout/left-menu');
 		$this->load->view('Showname/show_name');
+		$this->load->view('Showname/script');
 		//$this->load->view('layout/footer');
 		$this->load->view('layout/foot');
-		
     }
-    public function show_name2()
-	{
-		$this->load->view('layout/head');
-		$this->load->view('layout/header');
-		$this->load->view('layout/left-menu');
-		$this->load->view('Showname/show_name');
-		//$this->load->view('layout/footer');
-		$this->load->view('layout/foot');
-		
-	}
-
-
 }

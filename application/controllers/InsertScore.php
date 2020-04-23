@@ -9,6 +9,7 @@ class InsertScore extends BD_Controller {
 		$this->load->view('layout/header');
 		$this->load->view('layout/left-menu');
 		$this->load->view('ResultScore/Insert_Score');
+		$this->load->view('ResultScore/script');
 		// $this->load->view('layout/footer');
 		$this->load->view('layout/foot');
 
