@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,7 +58,9 @@
 
 
 </head>
+
 <body class="hold-transition skin-blue sidebar-mini">
+
 <div class="wrapper">
 
   <header class="main-header">
@@ -199,6 +200,8 @@
 			}
 
 		</script>
+
+
     <div class="row">
       <div class="col-md-3">
       <div class="form-group">
@@ -330,18 +333,14 @@
 
       </div>
     </div>
-    
-
-
-    
-
+ 
       <br><br>
       <form id="form1" hidden>
       <div class="row">
       <div class="col-xs-12">
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">การแข่งขันรอบแบ่งกลุ่ม แมทช์ #01</h3>
+            <h3 class="box-title">การแข่งขันรอบรองท้าชิง แมทช์ #01</h3>
               <div class="box-tools">
                 <div class="input-group input-group-sm hidden-xs" style="width: 150px;">
                   <div class="input-group-btn">
@@ -351,15 +350,18 @@
             </div>
           <div class="box-body table-responsive no-padding">
             <table class="table table-hover">
+            <thead>
               <tr>
-                <th>เวลา</th>
-                <th>คนที่ 1</th>
-                <th>คนที่ 2</th>
-                <th>คะแนนรอบที่ 1</th>
-                <th>คะแนนรอบที่ 2</th>
-                <th>คะแนนรอบที่ 3</th>
-                <th>ผู้ชนะ</th>
+                <th scope="col">เวลา</th>
+                <th scope="col">คนที่ 1</th>
+                <th scope="col">คนที่ 2</th>
+                <th scope="col">เซทที่ 1</th>
+                <th scope="col">เซทที่ 2</th>
+                <th scope="col">เซทที่ 3</th>
+                <th scope="col">ผู้ชนะ</th>
               </tr>
+            </thead>
+
               <tr>
                 <td>18.00 น.</td>
                 <td>ชุติมา อนันตกูล</td>
@@ -397,7 +399,7 @@
       <div class="col-xs-12">
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">การแข่งขันรอบแบ่งกลุ่ม แมทช์ #02</h3>
+            <h3 class="box-title">การแข่งขันรอบรองท้าชิง แมทช์ #02</h3>
               <div class="box-tools">
                 <div class="input-group input-group-sm hidden-xs" style="width: 150px;">
                   <div class="input-group-btn">
@@ -411,9 +413,9 @@
                 <th>เวลา</th>
                 <th>คนที่ 1</th>
                 <th>คนที่ 2</th>
-                <th>คะแนนรอบที่ 1</th>
-                <th>คะแนนรอบที่ 2</th>
-                <th>คะแนนรอบที่ 3</th>
+                <th>เซทที่ 1</th>
+                <th>เซทที่ 2</th>
+                <th>เซทที่ 3</th>
                 <th>ผู้ชนะ</th>
               </tr>
               <tr>
@@ -468,11 +470,11 @@
             <table class="table table-hover">
               <tr>
                 <th>เวลา</th>
-                <th>กลุ่ม A</th>
-                <th>กลุ่ม B</th>
-                <th>คะแนนรอบที่ 1</th>
-                <th>คะแนนรอบที่ 2</th>
-                <th>คะแนนรอบที่ 3</th>
+                <th>ทีม A</th>
+                <th>ทีม B</th>
+                <th>เซทที่ 1</th>
+                <th>เซทที่ 2</th>
+                <th>เซทที่ 3</th>
                 <th>ผู้ชนะ</th>
               </tr>
               <tr>
@@ -482,16 +484,16 @@
                 <td>9 - 10</td>
                 <td>7 - 10</td>
                 <td>-</td>
-                <td><span class="label label-success">กลุ่ม B</span></td>
+                <td><span class="label label-success">ทีม B</span></td>
               </tr>
               <tr>
                 <td>18.30 น.</td>
                 <td>พงศธร รักทอง<br>สุทธิพงษ์ จินตาแก้ว</td>
                 <td>ชัชวาล สุคนธปฏิภาค<br>ตู่ ภพธร</td>
                 <td>9 - 0</td>
-                <td> - </td>
+                <td>11 - 0</td>
                 <td>  - </td>
-                <td><span class="label label-success">กลุ่ม A</span></td>        
+                <td><span class="label label-success">ทีม A</span></td>        
               </tr>
             </table>
             </div>
@@ -515,11 +517,11 @@
             <table class="table table-hover">
               <tr>
                 <th>เวลา</th>
-                <th>กลุ่ม A</th>
-                <th>กลุ่ม B</th>
-                <th>คะแนนรอบที่ 1</th>
-                <th>คะแนนรอบที่ 2</th>
-                <th>คะแนนรอบที่ 3</th>
+                <th>ทีม A</th>
+                <th>ทีม B</th>
+                <th>เซทที่ 1</th>
+                <th>เซทที่ 2</th>
+                <th>เซทที่ 3</th>
                 <th>ผู้ชนะ</th>
               </tr>
               <tr>
@@ -529,16 +531,16 @@
                 <td>9 - 10</td>
                 <td>7 - 10</td>
                 <td>-</td>
-                <td><span class="label label-success">กลุ่ม B</span></td>
+                <td><span class="label label-success">ทีม B</span></td>
               </tr>
               <tr>
                 <td>19.30 น.</td>
                 <td>วรเมธ ขวัญนิมิตร<br>วิทวัส ช่วยพนัง</td>
                 <td>สิทธินนท์ เดิมหลิ่ม<br>สุวิจักขณ์ พิศสุพรรณ</td>
                 <td>9 - 0</td>
-                <td> - </td>
+                <td>11 - 0</td>
                 <td>  - </td>
-                <td><span class="label label-success">กลุ่ม A</span></td>        
+                <td><span class="label label-success">ทีม A</span></td>        
               </tr>
             </table>
             </div>
