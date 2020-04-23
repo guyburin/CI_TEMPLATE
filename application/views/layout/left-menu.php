@@ -14,8 +14,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            <li><a href="<?php echo base_url(); ?>InsertScore"><i class="fa fa-circle-o"></i>เพิ่มคะแนนการแข่งขัน</a></li>
+            <li><a href="<?php echo base_url(); ?>ReportScores"><i class="fa fa-circle-o"></i>ผลการแข่งขัน</a></li>
+            <li><a href="<?php echo base_url(); ?>ShowName"><i class="fa fa-circle-o"></i>รายชื่อผู้เข้าแข่งขัน</a></li>
           </ul>
         </li>
       </ul>
