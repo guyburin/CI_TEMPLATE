@@ -45,7 +45,7 @@
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->
-                <form role="form" method="POST" action="<?php echo base_url(); ?>Pdf">
+                <form role="form" method="POST" action="<?php echo base_url(); ?>dompdf">
                     <div class="box-body">
                         <div class="form-group">
                             <label for="exampleInputEmail1">ทีม 1 </label>
@@ -82,7 +82,10 @@
             <div class="col-md-2"></div>
         </div>
     </div>
+    <!-- Button trigger modal -->
     </section>
     <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
+
+

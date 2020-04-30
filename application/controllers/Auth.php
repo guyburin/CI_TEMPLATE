@@ -96,5 +96,12 @@ class Auth extends CI_Controller
 		}
 		
 			
-		}
+	}
+
+	function mypdf(){
+		$this->load->library('pdf');
+		$this->pdf->load_view('mypdf');
+		$this->pdf->render();
+		$this->pdf->stream("welcome.pdf");
+	}
 }
