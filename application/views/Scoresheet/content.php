@@ -45,7 +45,7 @@
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->
-                <form role="form" method="POST" action="<?php echo base_url(); ?>dompdf">
+                <form role="form" method="POST" action="<?php echo base_url(); ?>thai_pdf_test">
                     <div class="box-body">
                         <div class="form-group">
                             <label for="exampleInputEmail1">ทีม 1 </label>
