@@ -27,15 +27,15 @@
 								<div class="row">
 									<div class="col-md-3">
 										<!-- <div class="form-group">
-          <label for="list">รายการแข่งขัน :</label>
-          <select class="form-control select2" id="list" onchange="myFunctions()">
-            <option value="">เลือกรายการแข่งขัน</option>
-            <option value="Walailak1">วลัยลักษณ์ครั้งที่ 1</option>
-            <option value="Walailak2">วลัยลักษณ์ครั้งที่ 2</option>
-            <option value="Walailak3">วลัยลักษณ์ครั้งที่ 3</option>
-            <option value="Walailak4">วลัยลักษณ์ครั้งที่ 4</option>
-          </select>
-        </div> -->
+										<label for="list">รายการแข่งขัน :</label>
+										<select class="form-control select2" id="list" onchange="myFunctions()">
+											<option value="">เลือกรายการแข่งขัน</option>
+											<option value="Walailak1">วลัยลักษณ์ครั้งที่ 1</option>
+											<option value="Walailak2">วลัยลักษณ์ครั้งที่ 2</option>
+											<option value="Walailak3">วลัยลักษณ์ครั้งที่ 3</option>
+											<option value="Walailak4">วลัยลักษณ์ครั้งที่ 4</option>
+										</select>
+										</div> -->
 
 										<form id="type">
 											<div class="form-group">
@@ -52,16 +52,16 @@
 										<form id="competition1" hidden>
 											<div class="form-group">
 												<label for="competition_type">ประเภทผู้แข่งขัน :</label>
-												<select class="form-control select2" id="competition_type" onchange="myFunction()">
+												<select class="form-control select2" id="competition_type1" onchange="myFunction()">
 													<option value="">เลือกประเภทผู้แข่งขัน</option>
-													<option value="Women2">หญิงเดี่ยว</option>
-													<option value="Men2">ชายเดี่ยว</option>
+													<option value="Women1">หญิงเดี่ยว</option>
+													<option value="Men1">ชายเดี่ยว</option>
 												</select>
 											</div>
 
 											<div class="form-group">
 												<label for="competition_type">รุ่นอายุ :</label>
-												<select class="form-control select2" id="competition_type" onchange="myFunction()">
+												<select class="form-control select2" id="competition_type2" onchange="myFunction()">
 													<option value="">เลือกรุ่นอายุ</option>
 													<option value="๊U9">อายุไม่เกิน 8 ปี</option>
 													<option value="U11">อายุไม่เกิน 10 ปี</option>
@@ -74,16 +74,16 @@
 										<form id="competition2" hidden>
 											<div class="form-group">
 												<label for="competition_type">ประเภทผู้แข่งขัน :</label>
-												<select class="form-control select2" id="competition_type" onchange="myFunction()">
+												<select class="form-control select2" id="competition_type3" onchange="myFunction2()">
 													<option value="">เลือกประเภทผู้แข่งขัน</option>
-													<option value="men2">ชายคู่</option>
+													<option value="Men2">ชายคู่</option>
 													<option value="Women2">หญิงคู่</option>
-													<option value="Men2">คู่ชาย-หญิง</option>
+													<option value="Men-Women2">คู่ชาย-หญิง</option>
 												</select>
 											</div>
 											<div class="form-group">
 												<label for="competition_type">รุ่นผู้แข่งขัน :</label>
-												<select class="form-control select2" id="competition_type" onchange="myFunction()">
+												<select class="form-control select2" id="competition_type4" onchange="myFunction2()">
 													<option value="">เลือกรุ่นผู้แข่งขัน</option>
 													<option value="handN">มือ N</option>
 													<option value="handS-">มือ S-</option>
@@ -136,7 +136,7 @@
 															<td>5 - 6</td>
 															<td><span class="label label-success">สัณห์สินี รักเนียม</span></td>
 														</tr>
-														
+
 													</table>
 												</div>
 											</div>
@@ -176,23 +176,23 @@
 															<td><span class="label label-success">ปัญญพัฒน์ เจือบุญ</span></td>
 														</tr>
 														<!-- <tr>
-                  <td>20.00 น.</td>
-                  <td>ศิริรัตน์ วิชิตแย้ม</td>
-                  <td>เสาวรัตน์ ชวนดี</td>
-                  <td>5 - 5</td>
-                  <td>7 - 7</td>
-                  <td> 10 - 8</td>
-                  <td><span class="label label-success">ศิริรัตน์ วิชิตแย้ม</span></td>
-                </tr>
-                <tr>
-                  <td>20.30 น.</td>
-                  <td>ปิยมินทร์ ใจมา</td>
-                  <td>จิราวรรณ ช่วยแก้ว</td>
-                  <td>10 - 10</td>
-                  <td></td>
-                  <td></td>
-                  <td><span class="label label-primary">อยู่ระหว่างแข่งขัน</span></td>
-                </tr> -->
+														<td>20.00 น.</td>
+														<td>ศิริรัตน์ วิชิตแย้ม</td>
+														<td>เสาวรัตน์ ชวนดี</td>
+														<td>5 - 5</td>
+														<td>7 - 7</td>
+														<td> 10 - 8</td>
+														<td><span class="label label-success">ศิริรัตน์ วิชิตแย้ม</span></td>
+														</tr>
+														<tr>
+														<td>20.30 น.</td>
+														<td>ปิยมินทร์ ใจมา</td>
+														<td>จิราวรรณ ช่วยแก้ว</td>
+														<td>10 - 10</td>
+														<td></td>
+														<td></td>
+														<td><span class="label label-primary">อยู่ระหว่างแข่งขัน</span></td>
+														</tr> -->
 													</table>
 												</div>
 											</div>
@@ -235,14 +235,14 @@
 															<td><span class="label label-success">ทีม B</span></td>
 														</tr>
 														<!-- <tr>
-                  <td>18.30 น.</td>
-                  <td>พงศธร รักทอง<br>สุทธิพงษ์ จินตาแก้ว</td>
-                  <td>ชัชวาล สุคนธปฏิภาค<br>ตู่ ภพธร</td>
-                  <td>9 - 0</td>
-                  <td>11 - 0</td>
-                  <td> - </td>
-                  <td><span class="label label-success">ทีม A</span></td>
-                </tr> -->
+														<td>18.30 น.</td>
+														<td>พงศธร รักทอง<br>สุทธิพงษ์ จินตาแก้ว</td>
+														<td>ชัชวาล สุคนธปฏิภาค<br>ตู่ ภพธร</td>
+														<td>9 - 0</td>
+														<td>11 - 0</td>
+														<td> - </td>
+														<td><span class="label label-success">ทีม A</span></td>
+														</tr> -->
 													</table>
 												</div>
 											</div>
@@ -282,14 +282,14 @@
 															<td><span class="label label-success">ทีม B</span></td>
 														</tr>
 														<!-- <tr>
-                  <td>19.30 น.</td>
-                  <td>วรเมธ ขวัญนิมิตร<br>วิทวัส ช่วยพนัง</td>
-                  <td>สิทธินนท์ เดิมหลิ่ม<br>สุวิจักขณ์ พิศสุพรรณ</td>
-                  <td>9 - 0</td>
-                  <td>11 - 0</td>
-                  <td> - </td>
-                  <td><span class="label label-success">ทีม A</span></td>
-                </tr> -->
+														<td>19.30 น.</td>
+														<td>วรเมธ ขวัญนิมิตร<br>วิทวัส ช่วยพนัง</td>
+														<td>สิทธินนท์ เดิมหลิ่ม<br>สุวิจักขณ์ พิศสุพรรณ</td>
+														<td>9 - 0</td>
+														<td>11 - 0</td>
+														<td> - </td>
+														<td><span class="label label-success">ทีม A</span></td>
+														</tr> -->
 													</table>
 												</div>
 											</div>

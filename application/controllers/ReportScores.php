@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class ReportScores extends BD_Controller {
+class ReportScores extends BD_Controller
+{
 
 	public function index()
 	{
@@ -12,8 +13,7 @@ class ReportScores extends BD_Controller {
 		// $this->load->view('report_score/script');
 		// $this->load->view('layout/footer');
 		$this->load->view('layout/foot');
-
-	}	
+	}
 	public function score()
 	{
 		$this->load->view('layout/head');
@@ -23,6 +23,5 @@ class ReportScores extends BD_Controller {
 		$this->load->view('report_score/script');
 		// $this->load->view('layout/footer');
 		$this->load->view('layout/foot');
-
-	}	
+	}
 }
