@@ -28,7 +28,16 @@
       <!-- select -->
       <div class="form-group">
         <label for="generation">ประเภทการแข่งขัน :</label>
-        <select class="form-control" id="slct1" name="slct1" onchange="populate(this.id,'slct2')">
+        <?php 
+         foreach ($data as $value => $row) {
+          if($row['type']=="เยาวชน"){
+            $va = 1;
+          }else{
+            $va= 0;
+          }
+        }
+        ?>
+        <select class="form-control" id="slct1" name="slct1" value="<?php echo $va ?>" onchange="populate(this.id,'slct2')">
           <option>เลือกประเภท</option>
           <option value="2">ประชาชน</option>
           <option value="1">เยาวชน</option>
@@ -48,7 +57,7 @@
       <!-- select -->
       <div class="form-group">
         <br>
-        <button type="submit" class="btn btn-info" onclick="showhide()">ค้นหา</button>
+        <button type="submit" class="btn btn-info" >ค้นหา</button>
       </div>
     </div>
 
@@ -58,7 +67,19 @@
     <div class="col-sm-10" style="margin-left: 20">
 
       <table id="tb1" class="table">
-        <thead>
+        <thead id="babypeople" hidden>
+          <tr>
+            <th>ลำดับ</th>
+            <th>ชื่อทีม</th>
+            <th>ชื่อผู้เข้าแข่ง</th>
+            <th>เพศ</th>
+            <th>อายุ</th>
+            <th>รายการแข่ง</th>
+            <th>ชื่อสโมสร</th>
+            <th>รุ่นที่แข่ง</th>
+          </tr>
+        </thead>
+        <thead id="people">
           <tr>
             <th>ลำดับ</th>
             <th>ชื่อทีม</th>

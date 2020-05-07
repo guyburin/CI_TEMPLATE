@@ -36,11 +36,15 @@
     function showhide(){
         var y = $("#slct1").val();
         if(y=1){
-            $("#tb1").show();
+            $("#babypeople").show();
         }else{
-            $("#tb2").show();
+            $("#people").show();
         }
     }
+
+    $( document ).ready(function() {
+        showhide
+    });
 
 </script>
 
