@@ -28,16 +28,7 @@
       <!-- select -->
       <div class="form-group">
         <label for="generation">ประเภทการแข่งขัน :</label>
-        <?php 
-         foreach ($data as $value => $row) {
-          if($row['type']=="เยาวชน"){
-            $va = 1;
-          }else{
-            $va= 0;
-          }
-        }
-        ?>
-        <select class="form-control" id="slct1" name="slct1" value="<?php echo $va ?>" onchange="populate(this.id,'slct2')">
+        <select class="form-control" id="slct1" name="slct1" onchange="populate(this.id,'slct2')">
           <option>เลือกประเภท</option>
           <option value="2">ประชาชน</option>
           <option value="1">เยาวชน</option>
@@ -57,7 +48,7 @@
       <!-- select -->
       <div class="form-group">
         <br>
-        <button type="submit" class="btn btn-info" >ค้นหา</button>
+        <button type="submit" class="btn btn-info">ค้นหา</button>
       </div>
     </div>
 
@@ -67,22 +58,10 @@
     <div class="col-sm-10" style="margin-left: 20">
 
       <table id="tb1" class="table">
-        <thead id="babypeople" hidden>
-          <tr>
-            <th>ลำดับ</th>
-            <th>ชื่อทีม</th>
-            <th>ชื่อผู้เข้าแข่ง</th>
-            <th>เพศ</th>
-            <th>อายุ</th>
-            <th>รายการแข่ง</th>
-            <th>ชื่อสโมสร</th>
-            <th>รุ่นที่แข่ง</th>
-          </tr>
-        </thead>
         <thead id="people">
           <tr>
             <th>ลำดับ</th>
-            <th>ชื่อทีม</th>
+            <th id="H">ชื่อทีม</th>
             <th>ชื่อผู้เข้าแข่ง</th>
             <th>เพศ</th>
             <th>อายุ</th>
@@ -96,16 +75,21 @@
         foreach ($data as $value => $row) {
           if ($row['type'] == "เยาวชน") {
         ?>
+            <script>
+              $(document).ready(function() {
+                $("#H").hide();
+              })
+            </script>
             <tbody>
               <tr>
                 <td><?php echo $i ?></td>
-                <td><?php echo $row['team'] ?></td>
+                <!-- <td><?php echo $row['team'] ?></td> -->
                 <td><?php echo $row['name1'] ?></td>
                 <td><?php echo $row['sex1'] ?></td>
                 <td><?php echo $row['old1'] ?></td>
                 <td><?php echo $row['competition'] ?></td>
                 <td><?php echo $row['club1'] ?></td>
-                <td>รุนอายุไม่เกิน <?php echo $row['generation'] ?> ปี</td>
+                <td>รุ่นอายุไม่เกิน <?php echo $row['generation'] ?> ปี</td>
               </tr>
             </tbody>
           <?php } else { ?>

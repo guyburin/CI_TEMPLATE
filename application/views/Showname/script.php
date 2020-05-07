@@ -15,7 +15,7 @@
         } else if (s1.value == "1") {
             var optionArray = [
                 "|รุ่นอายุ",
-                "1|รุ่นอายุไม่เกิน 8 ปี",
+                "1|รุ่นอายุไม่เกิน 9 ปี",
                 "2|รุ่นอายุไม่เกิน 10 ปี",
                 "3|รุ่นอายุไม่เกิน 12 ปี",
                 "4|รุ่นอายุไม่เกิน 14 ปี",
@@ -33,18 +33,18 @@
 
     }
 
-    function showhide(){
-        var y = $("#slct1").val();
-        if(y=1){
-            $("#babypeople").show();
-        }else{
-            $("#people").show();
-        }
-    }
+    // function showhide(){
+    //     var y = $("#slct1").val();
+    //     if(y=1){
+    //         $("#babypeople").show();
+    //     }else{
+    //         $("#people").show();
+    //     }
+    // }
 
-    $( document ).ready(function() {
-        showhide
-    });
+    // $( document ).ready(function() {
+    //     showhide
+    // });
 
 </script>
 
