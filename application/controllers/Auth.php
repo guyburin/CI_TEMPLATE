@@ -62,7 +62,7 @@ class Auth extends CI_Controller
 		$Password = $this->input->post('Password');
 		$Password_C = $this->input->post('C_Password');
 		// $p = password_hash($Password, PASSWORD_BCRYPT);
-		$Name = $this->input->post('Name');
+		$Name = $this->input->post('f_name');
 		$Sername = $this->input->post('Sername');
 		$Nickname = $this->input->post('Nickname');
 		// $age = $this->input->post('sex');
@@ -82,7 +82,7 @@ class Auth extends CI_Controller
 			$document = [
 				"username" => $Username,
 				"password" => $Password,
-				"name" => $Name,
+				"f_name" => $Name,
 				"sername" => $Sername,
 				"nick_name" => $Nickname,
 				"club" => $Club,
@@ -98,10 +98,5 @@ class Auth extends CI_Controller
 			
 	}
 
-	function mypdf(){
-		$this->load->library('pdf');
-		$this->pdf->load_view('mypdf');
-		$this->pdf->render();
-		$this->pdf->stream("welcome.pdf");
-	}
+
 }
