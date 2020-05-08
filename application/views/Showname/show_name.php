@@ -72,6 +72,7 @@
         </thead>
         <?php
         $i = 1;
+        if($data != null){
         foreach ($data as $value => $row) {
           if ($row['type'] == "เยาวชน") {
         ?>
@@ -108,6 +109,7 @@
         <?php }
           $i++;
         }
+      }
         ?>
       </table>
 
